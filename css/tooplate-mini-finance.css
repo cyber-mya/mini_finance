@@ -1147,3 +1147,11 @@ strong {
   }
 }
 
+.mini-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
