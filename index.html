@@ -680,10 +680,44 @@ Bootstrap 5 Dashboard Admin Template
             var chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
         </script>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Finance</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- if you have CSS -->
+</head>
+<body>
+  <!-- Your main page content goes here -->
+
+  <!-- Footer -->
+  <footer style="
+      text-align: center;
+      font-size: 14px;        /* readable font size */
+      line-height: 1.6;       /* spacing between lines */
+      padding: 15px 0;        /* space above and below text */
+      color: #333333;         /* dark text for contrast */
+      background-color: #f9f9f9; /* light background for readability */
+  ">
+    Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Johnson Adesola Myriam
+  </footer>
+
+  <!-- Dynamic Date Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const dateSpan = document.getElementById("deploy-date");
+      if (dateSpan) {
+        const today = new Date();
+        const options = { day: "2-digit", month: "short", year: "numeric" };
+        dateSpan.textContent = today.toLocaleDateString("en-GB", options);
+      }
+    });
+  </script>
+</body>
+</html>
 	
-	<footer class="mini-footer">
-  Mini Finance v1.0 — Deployed on 05 Sep 2025 — By Adesola Johnson
-</footer>
+
 
 
     </body>
